@@ -21,6 +21,7 @@ blockquote {
 	font-family: 'Kaushan Script', cursive;
 }
 
+
 /* --------------------------------------------------- */
 
 /* barvy */
@@ -65,4 +66,126 @@ blockquote {
 	- https://css-tricks.com/patterns-for-practical-css-custom-properties-use/
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
+article{
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	column-gap: 40px;
 
+}
+header{
+	
+	grid-column: 2 / 3;
+	margin: 20px 0;
+}
+h1,
+h2{
+color: var(--zelena);
+
+}
+p{
+	margin:0;
+	padding-bottom: 20px;
+}
+h1{
+	font-size: 70px;
+	margin-bottom: 50px;
+}
+
+header p{
+	color: #b2bec3;
+}
+.tip-vlevo{
+	grid-column: 1 / 2;
+	
+	text-align: right;
+	border-right: 2px solid #f79f1f;
+	
+	margin-bottom: 50px;
+
+
+}
+.tip-vpravo{
+	grid-column: 3 / 4;
+	
+	text-align: left;
+	border-left: 2px solid #f79f1f;
+	
+	margin-bottom: 50px;
+
+}
+.tip-vlevo p{
+	padding: 20px;
+	
+}
+.tip-vpravo p{
+	padding: 20px;
+	
+}
+.tip img{
+	padding: 20px 20px 0 20px;
+}
+
+
+a{
+	color: var(--oranzova);
+}
+article p{
+	grid-column: 2 / 3;
+}
+
+figure{
+	grid-column: 1 / -1;
+	margin: 40px 0;
+
+}
+blockquote{
+	grid-column: 1 / -1;
+	font-size: 30px;
+	color: var(--seda);
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.tip{
+	background-color: #edf3f5;
+	color: #636e72;
+	font-size: 15px;
+
+}
+img{
+	width: 100%;
+}
+h2{
+	grid-column: 2 / 3;
+	font-size: 45px;
+	padding-bottom: 20px;
+}
+
+blockquote::after,
+blockquote::before{
+	content: "";
+	display: block;
+	width: 100px;
+	height: 2px;
+	background-color: var(--limetka);
+	margin: 20px auto;
+	
+}
+p{
+	margin-top: 0;
+	
+}
+figcaption{
+	color: var(--seda);
+	font-size: 15px;
+	
+}
+footer{
+	grid-column: 2 / 3;
+	padding-top: 20px;
+	color: var(--seda);
+	font-size: 15px;
+}
+footer a{
+	color: var(--seda);
+}
